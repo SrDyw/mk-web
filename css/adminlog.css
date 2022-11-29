@@ -1,0 +1,95 @@
+#log {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+    background: linear-gradient(rgb(42, 51, 112), rgba(90, 142, 255, 0.371)), url("imgs/main-living_room.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.formulary_content {
+    width: 300px;
+    height: 70%;
+    max-height: 500px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px #00000034;
+
+
+    position: relative;
+}
+
+.formulary__header {
+    height: 40px;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background: linear-gradient(45deg, var(--main-color-hls), var(--secondary-color-hls));
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 10px 10px #00000034;
+}
+
+.admin__input__content {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: hsl(var(--main-color-h), 76%, 66%);
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.admin__input__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: hsl(var(--main-color-h), 76%, 66%);
+}
+
+input {
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+input::placeholder {
+    color: hsl(var(--main-color-h), 76%, 86%);
+}
+button {
+    padding: 10px 20px;
+    background: hsl(var(--main-color-h), 76%, 66%);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: .2s;
+
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button:hover {
+    transform: translateX(-50%) scale(1.1);
+}

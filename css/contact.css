@@ -1,0 +1,230 @@
+body {
+    /* background-color: red; */
+    min-height: 100vh;
+}
+
+
+#contact
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background: linear-gradient(#000000c0, #00000042), url("imgs/main-living_room.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    position: relative;
+    top: 60px;
+
+    height: 100vh;
+}
+.formulary {
+    width: 90%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+
+    border-bottom: 1px solid var(--main-color-hls);
+    background-color: rgb(255, 255, 255);
+
+    max-width: 800px;
+
+    top: 40px;
+    min-height: auto;
+    margin-bottom: 200px;
+}
+
+.formulary__header {
+    background: linear-gradient(45deg, var(--main-color-hls), var(--secondary-color-hls));
+    width: 98%;
+    position: relative;
+    top: 8px;
+    margin: 0 auto;
+    height: 70px;
+    border-radius:20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.formulary h1{
+    text-align: center;
+    color: white;
+
+}
+.formulary form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.274);
+
+    position: relative;
+    height: calc(100% - 70px);
+}
+
+.formulary form .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+    position: relative;
+}
+
+.input__row {
+    position: relative;
+    width: 100%;
+}
+
+
+.input__row__header {
+    font-size: 25px;
+}
+
+.formulary form input, .formulary form textarea {
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;  
+    font-size: 1.1rem; 
+    box-sizing: border-box;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid var(--main-color-hls);
+
+    transition: .2s;
+}
+
+.formulary form input:hover, .formulary form textarea:hover {
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.formulary form textarea {
+    width: 100%;
+    height: 150px;
+}
+
+.formulary form button {
+    margin-top: 30px;
+    padding: 20px 10px;
+    outline: none;
+    background-color: hsl(var(--main-color-h), 74%, 76%);
+    border: none;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.11);
+    font-size: 1.25rem;
+    cursor: pointer;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    /* bottom: 50px; */
+}
+
+.formulary form button .btn__content {
+    display: flex;
+}
+
+
+@media (min-width: 768px)
+{   
+    .formulary {
+        top: 50px
+    }
+
+    .formulary form .row {
+        flex-direction: row;
+        position: relative;
+    }
+
+
+    .input__middle {
+        position: relative;
+        width: 40%;       
+    }
+
+    .formulary form textarea {
+        height: 230px;
+    }
+}
+
+
+
+/* RESPONSE PART */
+.res-message {
+    width: 90%;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px;
+    box-shadow: 10px 10px 20px #00000042;
+    max-width: 600px;
+
+    position: relative;
+    top: 100px
+}
+
+.res-message .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(var(--main-color-h), 74%, 90%, 0.4);
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: 10px 10px 20px #00000042;
+}
+
+.res-message .info h1,h3 {
+    text-align: center;
+}
+
+.res-message .info h3 {
+    color: hsl(var(--main-color-h), 74%, 66%);
+}
+
+.btn a{
+    background-color: hsl(var(--main-color-h), 74%, 76%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+    transition: .2s;
+
+}
+
+.btn a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 10px 10px 20px #00000042;
+}

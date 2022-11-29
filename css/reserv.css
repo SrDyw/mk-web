@@ -1,0 +1,432 @@
+body {
+    background: linear-gradient(#000000, #0000006e), url("imgs/main-room.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section {
+    position: relative;
+    top: 80px;
+    margin-bottom: 100px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+}
+
+
+.section-calendar {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.calendar {
+    position: relative;
+    top: 50px;
+    background-color: white;
+    width: 472px;
+    height: 450px;
+
+
+    display: grid;
+    grid-template-rows: 1fr 3fr 0.25fr;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.calendar__header {
+    background: linear-gradient(45deg, var(--main-color-hls), var(--secondary-color-hls));
+}
+
+.calendar__header h1 {
+    background-color: rgba(255, 255, 255, 0.137);
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.199);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar__header h1 span {
+    transform: translateY(10%);
+    margin-right: 10px;
+}
+
+.calendar__month {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.calendar__month__arrow {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .2s;
+    cursor: pointer;
+
+}
+
+.calendar__month__arrow:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.calendar__month__arrow .arrow{
+    width: 20px;
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    position: relative;
+
+    top: -5px;
+}
+
+.calendar__month__arrow .arrow::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    transform: rotate(-90deg) translate(-40%, -40%);
+    border-radius: 20px;
+}
+
+.calendar__month__arrow:first-child .arrow{
+    transform: rotate(-45deg);
+}
+
+.calendar__month__arrow:first-child .arrow::after {
+    transform: rotate(90deg) translate(40%, 350%);
+}
+
+.calendar__month__content {
+    width: 165px;
+    height: 60px;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.calendar__month__slide {
+    display: flex;
+    justify-content: space-between;
+    width: 1980px;
+    transition: .2s;
+}
+
+.calendar__month__name {
+    width: 165px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar__days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+
+    padding: 10px 10px;
+
+}
+
+.calendar__day {
+    background-color: hsl(var(--main-color-h), 76%, 86%);
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .2s;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: .5s;
+    padding: 5px;
+
+}
+
+.selected__day {
+    background-color: hsla(var(--secondary-color-h), 100%, 50%, 0.4) !important;
+    border: 1px solid hsl(var(--secondary-color-h), 100%, 46%);
+}
+
+.active__day {
+    background-color: hsl(var(--secondary-color-h), 100%, 50%) !important;
+}
+
+.calendar__day__nshow {
+    opacity: 0.5;
+}
+.sunday{
+    background-color: hsl(var(--main-color-h), 100%, 80%);
+}
+.calendar__day:hover {
+    border-radius: 0px;
+    transform: scale(1.2);
+    background-color: hsl(var(--secondary-color-h), 76%, 86%); ;
+}
+
+.calendar__day__effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00000038;
+    left: -100%;
+    transition: .2s;
+    transform: skew(45deg);
+}
+
+
+
+.calendar__day__number {
+    position: absolute;
+    margin: 5px;
+    z-index: 100;
+}
+
+.calendar__footer {
+    background: linear-gradient(45deg, var(--main-color-hls), var(--secondary-color-hls));
+}
+
+.calendar__footer ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0 10px;
+    color: #fff;
+}
+
+.calendar__footer ul li {
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.171);
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.section-input {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 80%;
+    height: 500px;
+    position: relative;
+    top: 20px;
+    background-color: #fff;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+}
+
+form input {
+    color: hsl(var(--secondary-color-h), 100%, 50%);
+}
+
+form .inputs {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    margin-left: 0;
+
+    overflow-y: scroll;
+
+
+}
+form h1 {
+    background: linear-gradient(45deg, var(--main-color-hls), var(--secondary-color-hls));
+    padding: 20px 20px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 5px 5px 20px hsl(var(--secondary-color-h), 100%, 66%, 0.6)
+}
+
+.input__content {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    border-bottom: 2px solid hsl(var(--main-color-h), 100%, 66%, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .2s;
+
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: auto;
+
+    border-radius: 50px 10px 10px 50px;
+    
+}
+
+
+.input__content:hover {
+    /* transform: scale(1.05); */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+
+
+}
+
+.input__content input::placeholder{
+    color: hsl(var(--main-color-h), 100%, 76%);
+}
+
+.input__content input{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 40px;
+
+}
+
+
+
+.input__icon {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(var(--main-color-h), 100%, 66%, 0.3);
+    position: absolute;
+    left: -0px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: hsl(var(--main-color-h), 100%, 56%);
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.input__filled .input__icon {
+    color: white;
+}
+
+.input__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, var(--main-color-hls), var(--secondary-color-hls));
+    border: none;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.form__decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.form__decoration__blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.form__decoration__e {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: 0.8;
+}
+
+
+.d-1 {
+    background-color: hsl(var(--main-color-h), 100%, 66%, 0.3);
+    bottom: -10%;
+    right: -10%;
+}   
+
+
+.d-2 {
+    background-color: hsl(var(--secondary-color-h), 100%, 66%, 0.3);
+    top: -10%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+}   
+
+
+
+
+@media (max-width: 900px) 
+{
+    section {
+        min-height: none;
+        height: auto;
+    }
+    .content {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .calendar {
+        width: 80%;
+    }
+}

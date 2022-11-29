@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirkastillito Web</title>
+
+    <link rel="stylesheet" href="css/root.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="https://www.facebook.com/mrp53">
+                <span><ion-icon name="logo-facebook"></ion-icon></span>
+                <h1>MIRKASTILLITO</h1>
+                <div class="logo__hover__effect"></div>
+            </a>
+            <div class="nav__links">
+                <div class="nav__links__icon bars">
+                    <ion-icon name="menu" class="icon"></ion-icon>
+                </div>
+                <div class="nav__links__icon close">
+                    <ion-icon name="close"></ion-icon>
+                </div>
+
+                <div class="nav__choice">
+                    <ul>
+                        <li>
+                            <a href="/#lobby">
+                                <span><ion-icon name="home"></ion-icon></span>
+                                <span>Lobby</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/#about">
+                                <span><ion-icon name="information-circle"></ion-icon></span>
+                                <span>Acerca</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services">
+                                <span><ion-icon name="star-half"></ion-icon></span>
+                                <span>Servicios</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/#photos">
+                                <span><ion-icon name="image"></ion-icon></span>
+                                <span>Fotos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/#calendar">
+                                <span><ion-icon name="calendar"></ion-icon></span>
+                                <span>Calendario</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- <div class="page__options">
+        <div class="page__options__content">
+            <div class="page__option__element option__lighting">
+                <ion-icon name="contrast"></ion-icon>
+                <div class="page__option__deploy">
+                    <div class="pod__element md__darken">
+                        <ion-icon name="moon"></ion-icon>
+                    </div>
+                    <div class="pod__element md__lighting">
+                        <ion-icon name="sunny"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="page__option__element option__lang">
+                <ion-icon name="list-box"></ion-icon>
+                <div class="page__option__deploy">
+                    <div class="pod__element">
+                        <h1>es</h1>
+                    </div>
+                    <div class="pod__element">
+                        <h1>in</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page__option__toggle">
+            <div class="page__options__icon">
+                <ion-icon name="settings"></ion-icon>
+            </div>
+        </div>
+        <input type="range" name="" id="" class="option__slider__color">
+    </div> -->
+    <section id="lobby">
+        <div class="lobby__content">
+            <div class="lobby__left">
+                <div class="lobby__left__info">
+                    <h1>Mirkastillito</h1>
+                    <h3>Sitio web del Hostal Mirkastillito, donde hacer su estancia agradable es nuestra premisa diaria.</h3>
+                    <div class="lobby__left__btns">
+                        <a class="lobby__left__btn" href="#about">
+                            <span><ion-icon name="planet"></ion-icon></span>
+                            <span>Explorar</span>
+                        </a>
+
+                        <a class="lobby__left__btn" href="#photos">
+                            <span><ion-icon name="photos"></ion-icon></span>
+                            <span>Galería</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="lobby__right">
+                <div class="lobby__background__image">
+                    <img src="css/imgs/capitolio.jpg" alt="">
+                </div>
+                <!-- <div class="lobby__right__photos">
+                    <div class="lobby__right__photo lb__ph1">
+                        <div class="lobby__right__photo__image">
+                            <img src="css/imgs/capitolio.jpg" alt="">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about__content">
+            <div class="about__left">
+                <div class="about__left__image">
+                    <img src="css/imgs/anfitrion.jpg" alt="">
+                </div>
+
+                <a class="about__left__info" href="https://www.facebook.com/mirka.rodriguez.923" target="_blank">
+                    <h1>@Mirka Rodríguez Pérez</h1>
+                </a>
+            </div>
+            <div class="about__right">
+                <div class="about__right__info">
+                    <h1 class="about__right__info__element">Acerca de mi...</h1>
+                    <h3 class="about__right__info__element">Mi nombre es <span>Mirka Rodríguez Pérez</span>, ofrezco servicios de renta de hace más de 5 años.</h3>
+                    <h1 class="about__right__info__element">Mirkastillito</h1>
+
+                    <h3 class="about__right__info__element">Se trata de un hostal ubicado en el CENTRO HISTÓRICO DE LA HABANA, habitaciones con terraza y baño y cocina privada para disfrutar. Ademas cuenta balcón para ver el día a día de los cubanos.</h3>
+
+                    <a class="about__right__info__element" href="#services">Servicios</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services__content">
+            <div class="services__header">
+                <div class="services__header__element sv__1">
+                    <div class="services__header__icon"><ion-icon name="star-half"></ion-icon></div>
+                    <h4>Servicios</h4>
+                </div>
+                <div class="services__header__element sv__2">
+                    <h1>¿Que podemos brindarle?</h1>
+                </div>
+            </div>
+            <div class="services__body">
+                <div class="services__card__content">
+                    <div class="service__card">
+                        <div class="service__card__header">
+                            <div class="serive__card__icon">
+                                <ion-icon name="bed"></ion-icon>
+                            </div>
+                            <h1>Habitacion Independiente</h1>
+                        </div>
+                        <div class="service__card__body">
+                            <p>Habitacion dentro de la casa totalmente independiente.</p>
+                        </div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card__header">
+                            <div class="serive__card__icon">
+                                <ion-icon name="water"></ion-icon>
+                            </div>
+                            <h1>Baño Privado</h1>
+                        </div>
+                        <div class="service__card__body">
+                            <p>La habitación cuenta con baño privado, cómodo y seguro.</p>
+                        </div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card__header">
+                            <div class="serive__card__icon">
+                                <ion-icon name="thermometer"></ion-icon>
+                            </div>
+                            <h1>Frio-Caliente</h1>
+                        </div>
+                        <div class="service__card__body">
+                            <p>Servicio de agua frio caliente en el baño.</p>
+                        </div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card__header">
+                            <div class="serive__card__icon">
+                                <ion-icon name="cafe"></ion-icon>
+                            </div>
+                            <h1>Cocina Privada</h1>
+                        </div>
+                        <div class="service__card__body">
+                            <p>Cocina dentro de la habitacion.</p>
+                        </div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card__header">
+                            <div class="serive__card__icon">
+                                <ion-icon name="basket"></ion-icon>
+                            </div>
+                            <h1>Terraza</h1>
+                        </div>
+                        <div class="service__card__body">
+                            <p>Terraza con columpio para tomar aire fresco.</p>
+                        </div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card__header">
+                            <div class="serive__card__icon">
+                                <ion-icon name="snow"></ion-icon>
+                            </div>
+                            <h1>Aire Acondicionado</h1>
+                        </div>
+                        <div class="service__card__body">
+                            <p>Cuenta con un aire acondicionado con el cual refrescar los momentos cálidos.</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="services__footer"></div>
+        </div>
+    </section>
+
+    <section id="photos">
+        <div class="photos__content">
+            <div class="photos__header">
+                <span class="photos__header__icon"><ion-icon name="images"></ion-icon></span>
+                <h1>Galería</h1>
+            </div>
+
+            <div class="photos__body">
+                <div class="photo__card__content">
+                    <div class="photo__card">
+                        <img src="css/imgs/main-living_room.webp" alt="">
+    
+                        <div class="photo__info">
+                            <p>Sala de estar de la casa</p>
+                        </div>
+                    </div>
+                    <div class="photo__card">
+                        <img src="css/imgs/casa1.jpeg" alt="">
+    
+                        <div class="photo__info">
+                            <p>Habitacion</p>
+                        </div>
+                    </div>
+                    <div class="photo__card">
+                        <img src="css/imgs/casa2.jpeg" alt="">
+    
+                        <div class="photo__info">
+                            <p>Camas</p>
+                        </div>
+                    </div>
+                    <div class="photo__card">
+                        <img src="css/imgs/casa3.jpeg" alt="">
+    
+                        <div class="photo__info">
+                            <p>Camas</p>
+                        </div>
+                    </div>
+                    <div class="photo__card">
+                        <img src="css/imgs/casa4.jpeg" alt="">
+    
+                        <div class="photo__info">
+                            <p>Cocina privada</p>
+                        </div>
+                    </div>
+                    <div class="photo__card">
+                        <img src="css/imgs/terraza.jpg" alt="">
+    
+                        <div class="photo__info">
+                            <p>Cocina de la casa</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rules">
+        <div class="rules__header">
+            <div class="rules__header__icon"><ion-icon name="paper"></ion-icon></div>
+            <h1>Restricciones</h1>
+        </div>
+        <div class="rules__content">
+            <div class="rule__card">
+                <div class="rule__card__icon"><ion-icon name="body"></ion-icon></div>
+                <div class="rule__card__info">
+                    <p>No se permiten niños en el alojamiento</p>
+                </div>
+            </div>
+            <div class="rule__card">
+                <div class="rule__card__icon"><ion-icon name="alert"></ion-icon></div>
+                <div class="rule__card__info">
+                    <p>No se permiten mascotas en el alojamiento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calendar">
+        <div class="calendar__header">
+            <div class="calendar__header__icon">
+                <ion-icon name="calendar"></ion-icon>
+            </div>
+            <h1>Calendario de Disponibilidad</h1>
+        </div>
+        <div class="calendar__content">
+            <div class="calendar__date__info">
+                <div class="calendar__date__month">
+                    <span class="calendar__arrow calendar__month__arrow"><ion-icon name="arrow-dropleft"></ion-icon></span>
+                    <span class="calendar__month">Septiembre</span>
+                    <span class="calendar__arrow calendar__month__arrow"><ion-icon name="arrow-dropright"></ion-icon></span>
+                </div>
+                <div class="calendar__date__year">
+                    <span class="calendar__arrow calendar__year__arrow"><ion-icon name="arrow-dropleft"></ion-icon></span>
+                    <span class="calendar__year">2022</span>
+                    <span class="calendar__arrow calendar__year__arrow"><ion-icon name="arrow-dropright"></ion-icon></span>
+                </div>
+                
+                <div class="calendar__week__days">
+                    <span>D</span>
+                    <span>L</span>
+                    <span>M</span>
+                    <span>X</span>
+                    <span>J</span>
+                    <span>V</span>
+                    <span>S</span>
+                </div>
+            </div>
+            <div class="calendar__days">
+            </div>
+
+            <div class="calendar__footer">
+                <div class="calendar__today">
+                    <div class="calendar__today__info">
+                        <h1>HOY</h1>
+                        <div class="calendar__today__sep"></div>
+                        <div class="calendar__today__date">
+                            <h3 class="calendar__today__day">22th</h3>
+                            <h3 class="calendar__today__month">Septiembre</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar__legend">
+                    <ul>
+                        <li>
+                           <span></span> 
+                           <p>Dias ocupados</p>
+                        </li>
+                        <li>
+                            <span></span> 
+                            <p>Dia actual</p>
+                         </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="services__body"></div>
+    <footer>
+        <h2>Mirkastillito Web</h2>
+        <h4>Todos los derechos reservados 2023</h4>
+    </footer>
+    
+    <script src="js/root.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
