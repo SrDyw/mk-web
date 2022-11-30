@@ -1277,6 +1277,7 @@ section
     color: white;
     width: 300px;
 }
+
 .calendar__arrow {
     display: flex;
     justify-content: center;
@@ -1291,6 +1292,16 @@ section
 .calendar__arrow:hover {
     background-color: white;
     color: hsl(var(--main-color-h), 56%, 46%);
+}
+
+@media (max-width: 700px) {
+    .calendar__date__month {
+        width: 250px;
+    }
+    
+    .calendar__month {
+        font-size: 24px;
+    }
 }
 
 .calendar__date__year {
