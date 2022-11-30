@@ -140,16 +140,10 @@ const transition_time = 0.20;
 const bloq_days = [
     {
         desc: "Ocupados", 
-        day_range: [10,20], 
-        month_range: [11, 12], 
+        day_range: [1,31], 
+        month_range: [12, 12], 
         year_range: [2022, 2022]
     },
-    {
-        desc: "Ocupados", 
-        day_range: [1,14], 
-        month_range: [1, 1], 
-        year_range: [2023, 2023]
-    }
 ];
 
 
