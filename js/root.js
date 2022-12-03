@@ -197,6 +197,17 @@ const updateCalendar = (month, year) => {
     
     calendar__month.innerHTML = months[month];
     calendar__year.innerHTML = year;
+
+    const calendar__day = document.querySelectorAll('.calendar__day');
+    const alert__win = document.querySelector('.alert__win');
+    calendar__day.forEach(day => {
+        day.onclick = () => {
+            alert__win.classList.add('active');
+            setTimeout(() => {
+                alert__win.classList.remove('active');
+            }, 5000);
+        }
+    })
 }
 
 const reset_calendar_state = () => {
